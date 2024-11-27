@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поля для ввода диапазона -->
+    <EditText
+        android:id="@+id/etMinValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Минимальное значение"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etMaxValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Максимальное значение"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Поле для ввода шага -->
+    <EditText
+        android:id="@+id/etStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Шаг между числами (необязательно)"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Поле для исключения чисел -->
+    <EditText
+        android:id="@+id/etExclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Исключить числа (через запятую)"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Кнопки -->
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сгенерировать числа"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRandomRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Случайный диапазон"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Вывод результатов -->
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Результаты:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Графическое отображение (гистограмма) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

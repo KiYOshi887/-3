@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Кнопка включения/выключения фонарика -->
+    <Button
+        android:id="@+id/btnToggleFlashlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Включить фонарик"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка мигания -->
+    <Button
+        android:id="@+id/btnBlinkFlashlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Режим мигания"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка SOS -->
+    <Button
+        android:id="@+id/btnSOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Режим SOS"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Ползунок яркости -->
+    <SeekBar
+        android:id="@+id/seekBarBrightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка экрана-фонарика -->
+    <Button
+        android:id="@+id/btnScreenLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Экран как фонарик"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
