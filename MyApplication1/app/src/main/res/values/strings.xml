@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string-array name="operations">
+        <item>Сложение</item>
+        <item>Вычитание</item>
+        <item>Умножение</item>
+        <item>Деление</item>
+        <item>Возведение в степень</item>
+    </string-array>
+</resources>
